@@ -51,15 +51,9 @@ _Reto propio, alineado a una problemática real de Villa El Salvador._
 **Instalación (no requiere instalar programas)**
 
 1. Descarga el proyecto: en GitHub toca **Code → Download ZIP** y descomprímelo (o usa `git clone https://github.com/medranojosta4-gif/ecohuella.git`).
-2. Abre una terminal dentro de la carpeta y ejecuta un servidor local (la cámara y el GPS necesitan `localhost` o `https`):
-
-```bash
-python -m http.server 8000
-```
-
-3. Abre **http://localhost:8000** en Chrome y permite el acceso a la **cámara** y a la **ubicación**.
-4. También puedes abrir `index.html` directamente en el navegador, pero algunas funciones de cámara pueden no estar disponibles.
-5. Se necesita conexión a internet (mapa, lector de QR y reconocimiento de objetos).
+2. Abre el archivo **`index.html`** con doble clic. Se abrirá en tu navegador (recomendado: Google Chrome) y la aplicación estará lista para usar.
+3. Permite el acceso a la **cámara** y a la **ubicación** cuando el navegador lo pida.
+4. Se necesita conexión a internet (mapa, lector de QR y reconocimiento de objetos).
 
 **Cómo usarla**
 
