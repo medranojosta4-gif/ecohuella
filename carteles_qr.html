@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteles QR Oficiales — Punto EcoVilla (U. Autónoma del Perú)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; padding: 0 !important; }
+            .print-sheet { box-shadow: none !important; border: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 min-h-screen py-8 px-4 flex flex-col items-center">
+
+    <!-- Barra de acciones superior (no sale al imprimir) -->
+    <div class="no-print w-full max-w-4xl bg-white rounded-2xl p-4 mb-6 shadow-sm border border-slate-200 flex flex-wrap items-center justify-between gap-4">
+        <div>
+            <h1 class="text-base font-extrabold text-slate-900">Carteles QR Listos para Imprimir</h1>
+            <p class="text-xs text-slate-500">Recórtalos y pégalos en tus contenedores/bolsas de demostración para el lunes 23 de noviembre.</p>
+        </div>
+        <button onclick="window.print()" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-xl shadow-sm transition cursor-pointer">
+            🖨️ Imprimir Carteles (A4)
+        </button>
+    </div>
+
+    <!-- Hoja A4 con los 2 Carteles -->
+    <div class="print-sheet w-full max-w-4xl bg-white p-8 rounded-3xl shadow-xl border border-slate-200 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- CARTEL 1: BOTELLAS PET -->
+        <div class="border-4 border-emerald-600 rounded-3xl p-6 flex flex-col items-center text-center bg-gradient-to-b from-emerald-50/70 to-white relative overflow-hidden">
+            <span class="bg-emerald-600 text-white text-[11px] font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full">
+                EcoHuella · Punto EcoVilla
+            </span>
+
+            <h2 class="text-2xl font-extrabold text-slate-900 mt-4">CONTENEDOR AZUL</h2>
+            <div class="mt-1 px-4 py-1.5 bg-emerald-100 text-emerald-900 rounded-xl font-extrabold text-base">
+                ♻️ BOTELLAS PLÁSTICAS PET
+            </div>
+
+            <p class="text-xs text-slate-600 mt-2 font-medium">
+                Sede: <strong>Universidad Autónoma del Perú</strong>
+            </p>
+
+            <!-- Código QR Real (ECOHUELLA-AUTONOMA-PET) -->
+            <div class="my-5 p-4 bg-white rounded-2xl border-2 border-dashed border-emerald-400 shadow-md">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&color=064e3b&data=ECOHUELLA-AUTONOMA-PET" alt="QR Botellas PET" class="w-48 h-48 mx-auto">
+                <p class="text-[10px] font-mono font-bold text-slate-400 mt-2">ID: ECOHUELLA-AUTONOMA-PET</p>
+            </div>
+
+            <div class="w-full bg-emerald-900 text-white rounded-2xl p-3.5 text-xs space-y-1">
+                <p class="font-extrabold text-emerald-300 text-sm">+10 EcoPuntos por botella</p>
+                <p class="text-[11px] text-emerald-100">1. Escanea el QR · 2. Toma las 3 fotos en vivo · 3. Valida con EcoIA</p>
+            </div>
+        </div>
+
+        <!-- CARTEL 2: LATAS DE ALUMINIO -->
+        <div class="border-4 border-sky-600 rounded-3xl p-6 flex flex-col items-center text-center bg-gradient-to-b from-sky-50/70 to-white relative overflow-hidden">
+            <span class="bg-sky-600 text-white text-[11px] font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full">
+                EcoHuella · Punto EcoVilla
+            </span>
+
+            <h2 class="text-2xl font-extrabold text-slate-900 mt-4">CONTENEDOR GRIS</h2>
+            <div class="mt-1 px-4 py-1.5 bg-sky-100 text-sky-900 rounded-xl font-extrabold text-base">
+                🥫 LATAS DE ALUMINIO
+            </div>
+
+            <p class="text-xs text-slate-600 mt-2 font-medium">
+                Sede: <strong>Universidad Autónoma del Perú</strong>
+            </p>
+
+            <!-- Código QR Real (ECOHUELLA-AUTONOMA-LATAS) -->
+            <div class="my-5 p-4 bg-white rounded-2xl border-2 border-dashed border-sky-400 shadow-md">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&color=0c4a6e&data=ECOHUELLA-AUTONOMA-LATAS" alt="QR Latas Aluminio" class="w-48 h-48 mx-auto">
+                <p class="text-[10px] font-mono font-bold text-slate-400 mt-2">ID: ECOHUELLA-AUTONOMA-LATAS</p>
+            </div>
+
+            <div class="w-full bg-sky-900 text-white rounded-2xl p-3.5 text-xs space-y-1">
+                <p class="font-extrabold text-sky-300 text-sm">+15 EcoPuntos por lata</p>
+                <p class="text-[11px] text-sky-100">1. Escanea el QR · 2. Toma las 3 fotos en vivo · 3. Valida con EcoIA</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
